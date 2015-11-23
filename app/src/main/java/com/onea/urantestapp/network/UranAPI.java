@@ -6,6 +6,6 @@ import rx.Observable;
 public interface UranAPI {
 
   @GET("test.php")
-  Observable<String> getTimestamp();
+  Observable<retrofit.Response<String>> getTimestamp();
 
 }
