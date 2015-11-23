@@ -71,7 +71,6 @@ dependencies {
     compile ('com.squareup.retrofit:retrofit:2.0.0-beta2') {
         exclude module: 'okhttp'
     }
-    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
     // Reactive SQLite wrapper
     compile 'com.pushtorefresh.storio:sqlite:1.6.1'
     compile 'com.pushtorefresh.storio:sqlite-annotations:1.6.1'
