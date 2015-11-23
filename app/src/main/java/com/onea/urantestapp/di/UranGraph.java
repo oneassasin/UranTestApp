@@ -1,7 +1,9 @@
 package com.onea.urantestapp.di;
 
+import com.onea.urantestapp.fragments.MainFragment;
+
 public interface UranGraph {
 
-  // TODO: 23.11.15 Add items for injecting
+  void inject(MainFragment mainFragment);
 
 }

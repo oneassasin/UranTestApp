@@ -24,10 +24,21 @@
         android:text="@string/fragment_main_data_download_button_text"
         android:textSize="12sp"/>
 
+    <TextView
+        android:id="@+id/fragment_main_input_data_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_main_data_download_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/fragment_main_input_data_text_view_text"
+        android:textColor="@android:color/black"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/fragment_main_recycler_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fragment_main_data_download_button"/>
+        android:layout_below="@id/fragment_main_input_data_text_view"/>
 
 </RelativeLayout>

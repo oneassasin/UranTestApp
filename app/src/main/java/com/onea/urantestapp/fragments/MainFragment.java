@@ -9,10 +9,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
+import com.onea.urantestapp.Application;
 import com.onea.urantestapp.R;
+import com.pushtorefresh.storio.sqlite.StorIOSQLite;
 import com.trello.rxlifecycle.components.support.RxFragment;
 
 import java.util.Random;
+
+import javax.inject.Inject;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -28,8 +32,14 @@ public final class MainFragment extends RxFragment {
   RecyclerView recyclerView;
   @Bind(R.id.fragment_main_relative_layout)
   RelativeLayout relativeLayout;
+  @Inject
+  StorIOSQLite storIOSQLite;
 
   private final Random random = new Random();
+
+  public MainFragment() {
+    Application.getApplication().getComponent().inject(this);
+  }
 
   @Override
   public View onCreateView(LayoutInflater inflater,

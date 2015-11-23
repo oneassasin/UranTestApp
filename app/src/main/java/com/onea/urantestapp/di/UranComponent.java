@@ -2,12 +2,20 @@ package com.onea.urantestapp.di;
 
 import com.onea.urantestapp.Application;
 
+import javax.inject.Singleton;
+
 import dagger.Component;
 
+@Singleton
 @Component(modules = {
-  ApplicationModule.class
+    ApplicationModule.class,
+    DBModule.class,
+    ManagersModule.class,
+    OkHttpModule.class,
+    StorIOModule.class,
+    UranAPIModule.class
 })
-public interface UranComponent {
+public interface UranComponent extends UranGraph {
 
   class Initializer {
 
