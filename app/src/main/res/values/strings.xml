@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UranTestApp</string>
+    <string name="fragment_main_change_bg_button_text">Изменить цвет фона</string>
+    <string name="fragment_main_data_download_button_text">Загрузить тестовые данные</string>
 </resources>

@@ -1,0 +1,33 @@
+<RelativeLayout
+    android:id="@+id/fragment_main_relative_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.onea.urantestapp.fragments.MainFragment">
+
+    <Button
+        android:id="@+id/fragment_main_change_bg_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fragment_main_change_bg_button_text"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/fragment_main_data_download_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/fragment_main_data_download_button_text"
+        android:textSize="12sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_main_recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_main_data_download_button"/>
+
+</RelativeLayout>
