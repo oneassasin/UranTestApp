@@ -3,4 +3,8 @@
     <string name="fragment_main_change_bg_button_text">Изменить цвет фона</string>
     <string name="fragment_main_data_download_button_text">Загрузить тестовые данные</string>
     <string name="fragment_main_input_data_text_view_text">( полученные данные )</string>
+    <string name="error_timeout">Problems with the connection to the server. Check your Internet connection.</string>
+    <string name="error_not_found">Response is not received from the server.</string>
+    <string name="error_no_internet">No connection to internet.</string>
+    <string name="error_unknown">Unknown error.</string>
 </resources>

@@ -13,7 +13,8 @@ import dagger.Component;
     ManagersModule.class,
     OkHttpModule.class,
     StorIOModule.class,
-    UranAPIModule.class
+    UranAPIModule.class,
+    DateFormatModule.class
 })
 public interface UranComponent extends UranGraph {
 
